@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "event": {
+      "title": "Community Event",
+      "description": "A big bimestrial community event with financial and engagement metrics.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "minLength": 3, "maxLength": 100 },
+        "theme": { "type": "string", "enum": ["Festival de Inverno", "Cine Central", "Almoço Tropical", "Outro"] },
+        "description": { "type": "string", "maxLength": 1000 },
+        "date": { "type": "string" },
+        "revenue": { "type": "number" },
+        "expense": { "type": "number" },
+        "attendees": { "type": "number" },
+        "creatorUid": { "type": "string" },
+        "creatorEmail": { "type": "string" },
+        "calendarEventId": { "type": "string" }
+      },
+      "required": ["title", "theme", "date", "revenue", "expense", "attendees", "creatorUid"]
+    }
+  },
+  "firestore": {
+    "events/{eventId}": {
+      "schema": "event",
+      "description": "Collection of bimestrial community events"
+    }
+  }
+}

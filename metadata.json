@@ -1,0 +1,6 @@
+{
+  "name": "Conecta Central",
+  "description": "Gerenciador de Grandes Eventos Bimestrais da comunidade com controle financeiro, métricas de engajamento e integração com o Google Calendar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
