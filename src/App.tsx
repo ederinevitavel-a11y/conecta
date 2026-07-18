@@ -40,7 +40,8 @@ const ALLOWED_EMAILS = [
   'denisegomes738@gmail.com',
   'caroline.shirley@hotmail.com',
   'sofiadeoliveirarangel90@gmail.com',
-  'gibeca26@gmail.com'
+  'gibeca26@gmail.com',
+  'enycake@hotmail.com'
 ];
 
 export default function App() {
@@ -412,10 +413,10 @@ export default function App() {
             </div>
             <div className="space-y-1">
               <h1 className="text-3xl font-extrabold font-display text-slate-900 dark:text-white tracking-tight">
-                Conecta Central
+                Conecta
               </h1>
               <p className="text-sm text-slate-500 dark:text-slate-400 font-medium max-w-xs mx-auto">
-                Gestão transparente e inteligente dos Grandes Eventos Bimestrais da comunidade.
+                Gestão transparente e inteligente.
               </p>
             </div>
           </div>
@@ -452,56 +453,7 @@ export default function App() {
               )}
             </button>
 
-            {/* Divider */}
-            <div className="relative flex py-2 items-center">
-              <div className="flex-grow border-t border-slate-200 dark:border-slate-850"></div>
-              <span className="flex-shrink mx-4 text-xs font-bold text-slate-400 dark:text-slate-500 font-display">OU</span>
-              <div className="flex-grow border-t border-slate-200 dark:border-slate-850"></div>
-            </div>
 
-            {/* Demo / Sandbox Mode Bypass */}
-            <div className="space-y-3">
-              <button
-                onClick={handleDemoLogin}
-                disabled={isLoggingIn}
-                className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-indigo-600 hover:bg-indigo-500 dark:bg-indigo-700 dark:hover:bg-indigo-600 text-white font-bold rounded-xl text-sm transition-all duration-200 shadow-md cursor-pointer disabled:bg-indigo-300 dark:disabled:bg-indigo-900 disabled:cursor-not-allowed"
-              >
-                <span>Acessar no Modo de Demonstração</span>
-              </button>
-              
-              <div className="p-3.5 bg-indigo-50/50 dark:bg-indigo-950/10 border border-indigo-100 dark:border-indigo-950/40 rounded-xl space-y-1.5 text-[11px] text-indigo-900 dark:text-indigo-300 leading-relaxed">
-                <p className="font-bold">
-                  💡 Restrição do Navegador / Iframe
-                </p>
-                <p>
-                  No ambiente de pré-visualização do AI Studio, o login do Google pode ser bloqueado devido a restrições de popups e cookies de terceiros.
-                </p>
-                <p>
-                  Selecione o <strong>Modo de Demonstração</strong> acima para liberar acesso instantâneo ao painel ou clique em <strong>"Open in new tab"</strong> no topo direito da tela para fazer login oficial com sua conta do Google de forma normal.
-                </p>
-              </div>
-
-              {/* List of Whitelisted Emails */}
-              <div className="pt-4 border-t border-slate-100 dark:border-slate-850 space-y-2">
-                <div className="flex items-center space-x-1.5 text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
-                  <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>E-mails com Acesso Cadastrado</span>
-                </div>
-                <div className="bg-slate-50 dark:bg-slate-950/50 border border-slate-150 dark:border-slate-850 p-3 rounded-xl space-y-1">
-                  <p className="text-[10px] text-slate-500 dark:text-slate-400 pb-1">
-                    Os seguintes endereços de e-mail possuem permissão total de acesso via Google Auth:
-                  </p>
-                  <div className="grid grid-cols-1 gap-1 text-[11px] font-mono font-medium text-slate-700 dark:text-slate-300">
-                    {ALLOWED_EMAILS.map((email, idx) => (
-                      <div key={idx} className="flex items-center space-x-1.5 py-0.5 border-b border-dashed border-slate-200/60 dark:border-slate-800/60 last:border-0">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span>{email}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Guidelines info */}
@@ -515,7 +467,7 @@ export default function App() {
 
         {/* Footer */}
         <footer className="text-center text-xs text-gray-400 font-mono py-4">
-          Conecta Central © 2026. Todos os direitos reservados à comunidade.
+          Conecta © 2026. Todos os direitos reservados à comunidade.
         </footer>
       </div>
     );

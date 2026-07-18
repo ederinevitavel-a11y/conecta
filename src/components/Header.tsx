@@ -29,7 +29,7 @@ export default function Header({ user, onLogoutSuccess, darkMode, onToggleDarkMo
           </div>
           <div>
             <h1 className="text-xl font-bold font-display text-gray-900 dark:text-white tracking-tight">
-              Conecta Central
+              Conecta
             </h1>
             <p className="text-xs text-gray-500 dark:text-slate-400 font-mono hidden sm:block">
               Eventos Bimestrais da Comunidade
